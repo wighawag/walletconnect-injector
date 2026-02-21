@@ -1,11 +1,11 @@
 {
-	"name": "wallet-connect-injector",
+	"name": "walletconnect-injector",
 	"version": "0.0.0",
 	"author": "Ronan Sandford",
 	"license": "MIT",
 	"keywords": [
 		"ethereum",
-		"wallet-connect",
+		"walletconnect",
 		"erc-6963"
 	],
 	"repository": {
@@ -29,16 +29,13 @@
 			"import": "./dist/index.js"
 		}
 	},
-	"bin": {
-		"ecli": "dist/cli.js"
-	},
 	"files": [
 		"dist",
 		"src"
 	],
 	"sideEffects": false,
 	"dependencies": {
-		
+		"@walletconnect/ethereum-provider": "^2.23.6"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.29.8",
